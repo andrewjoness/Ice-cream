@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+<style>
+    body{
+        font-family:Arial;
+    }
+    .menu{
+        display:flex;
+        justify-content:space-between;
+        border-radius:10px;
+        background:blue;
+        color:white
+    }
+    .name{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:20%;
+    }
+    .text{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:60%;
+        background-color: re;
+    }
+    .text video{
+        position:absolute;
+        width:864px;
+        height:130px;
+        object-fit:cover;
+    }
+    .nav{
+        display:flex;
+        justify-content:space-between;
+        padding:40px;
+        width:20%;
+    }
+    .nav p{
+        display:inline-block;
+    }
+    p a{   
+        text-decoration: none;
+        color:white;
+    }
+    a:hover {
+        text-transform: lowercase;
+    }
+    .middle{
+        height:60vh;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background: purpl;
+    }
+.middle1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: violet;
+    width:800px;
+    height:100%; 
+}
+.middle1:hover{
+    background:black
+}
+.middle1:hover .anime{
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    position:absolute;
+    animation: mymove 5s infinite;
+}
+.middle1:hover .anime1{
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    position:absolute;
+    animation: mymove1 5s infinite;
+}
+.middle1:hover .anime2{
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    position:absolute;
+    animation: mymove2 5s infinite;
+}
+.middle1:hover .anime3{
+    width:20px;
+    height:20px;
+    border-radius:50px;
+    position:absolute;
+    animation: mymove3 5s infinite;
+}
+@keyframes mymove{
+    0%{top:160px;left:10px;background:red}
+    25%{top:580px;left:10px;background: blue;}
+    50%{top:580px;left:735px;background:yellow}
+    75%{top:160px;left:735px;background: purple;}
+    100%{top:160px;left:10px;background:red}
+}
+@keyframes mymove1{
+    0%{top:160px;left:735px;background:purple}
+    25%{top:160px;left:10px;background: red;}
+    50%{top:580px;left:10px;background:blue}
+    75%{top:580px;left:735px;background: yellow;}
+    100%{top:160px;left:735px;background:purple}
+}
+@keyframes mymove2{
+    0%{top:580px;left:10px;background:blue}
+    25%{top:580px;left:735px;background: yellow;}
+    50%{top:160px;left:735px;background:purple}
+    75%{top:160px;left:10px;background: red;}
+    100%{top:580px;left:10px;background:blue}
+}
+@keyframes mymove3{
+    0%{top:580px;left:735px;background:yellow}
+    25%{top:160px;left:735px;background: purple;}
+    50%{top:160px;left:10px;background:red}
+    75%{top:580px;left:10px;background: blue;}
+    100%{top:580px;left:735px;background:yellow}
+}
+    h1{
+        text-align:center
+    }
+    .slideshow{
+        height:445px;
+        width:800px;
+        overflow:hidden;
+    }
+    .slide{
+        float:left;
+        height:445px;
+        width:800px;
+    }
+    .slide-show{
+        width:calc(800px*5);
+        animation: slide 10s ease-in-out infinite;
+    }
+    .slide:nth-child(1){
+        background: rgb(255,230,179);
+    }
+    .slide:nth-child(2){
+        background:rgb(223,178,178);
+    }
+    .slide:nth-child(3){
+        background:#5e2d14;
+    }
+    .slide:nth-child(4){
+        background: #c98932;
+    }
+    .slide:nth-child(5){
+        background: #93c572;
+    }
+    @keyframes slide{
+        20%{
+            margin-left:0px;
+        }
+        40%{
+            margin-left:calc(-800px*1)
+        }
+        60%{
+            margin-left:calc(-800px*2)
+        }
+        80%{
+            margin-left:calc(-800px*3)
+        }
+        100%{
+            margin-left:calc(-800px*4)
+        }
+    }
+    .think{
+        text-transform: uppercase;
+        font-style:italic;
+    }
+    .think:hover{
+        background: blue;
+        color:white
+    }
+    .pictures{
+        display:flex;
+        justify-content:space-around;
+        background:re;
+    }
+    .sbp{
+        height:300px;
+        width:300px;
+        box-shadow:10px 10px 40px black;
+        overflow:hidden;  
+    }
+    img{
+        height:100%;
+        width:100%;
+        transition:5s
+    }
+    .fight{
+        width:300px; 
+        height:50px;   
+        position:sticky;
+        bottom:0px;
+        background: rgba(234,123,89,.4);
+        color:white;
+    }
+    h3{ 
+        margin-left:10px
+    }
+    .sbp p{
+        margin:10px;
+        visibility:hidden;
+    }
+    span{
+        font-weight: bold;
+        font-style: italic;
+    }
+    .sbp:hover{
+        cursor:pointer
+    }
+    .sbp:hover .fight{
+        height:180px;
+        background:black;
+    }
+    .sbp:hover p{
+        visibility:visible
+    }
+    .sbp:hover img{
+        transform:scale(1.1) rotate(3deg)
+    }
+</style>
+<script>
+    function flavours()
+    {
+        var element=document.getElementById('names');
+        myWindow=window.open(element.value,"_blank")
+    }
+</script>
+</head>
+<body>
+
+<div class="menu">
+    <div class="name">
+        <i class="fa-solid fa-ice-cream fa-flip fa-2xl"></i>
+        ICE CREAM   
+    </div>
+    <div class="text">
+            <video autoplay loop muted>
+                <source src="./1st ice cream video.mp4" >
+            </video>
+        <div class="drop" style="position:relative">
+            <select id="names" style="width:500px;height:30px;opacity:.7">
+                <option value="#">Use this search bar to get info about the available flavours</option>
+                <option value="https://en.wikipedia.org/wiki/Vanilla_ice_cream">Vanilla</option>
+                <option value="https://en.wikipedia.org/wiki/Butterscotch">Butterscotch</option>
+                <option value="https://en.wikipedia.org/wiki/Strawberry_ice_cream">Strawberry</option>
+                <option value="https://en.wikipedia.org/wiki/Chocolate_ice_cream">Chocolate</option>
+                <option value="https://en.wikipedia.org/wiki/Pistachio_ice_cream">Pistachio</option>
+            </select>
+            <button style="height:30px;opacity:.7" onclick="flavours()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div class="nav">
+        <p><a href="#">HOME</a></p>
+        <p><a href="#">ABOUT</a></p>
+        <p><a href="#">CONTACT US</a></p>   
+    </div>
+</div>
+<br>
+<div class="middle">
+    <div class="middle1">
+        <div class="anime"></div>
+        <div class="anime1"></div>
+        <div class="anime2"></div>
+        <div class="anime3"></div>
+        <button style="cursor:pointer">ORDER NOW!!!</button>
+        <div id="orders"></div>
+    </div>
+    <div class="slideshow">
+        <div class="slide-show">
+            <div class="slide">
+                <h1>Vanilla</h1>
+                <img src="./Vanilla.jpg" />
+            </div>
+            <div class="slide">
+                <h1>Strawberry</h1>
+                <img src="./Strawberry.jpg" />
+            </div>
+            <div class="slide">
+                <h1>Chocolate</h1>
+                <img src="./Chocolate.jpg" />
+            </div>
+            <div class="slide">
+                <h1>Butterscotch</h1>
+                <img src="./Butterscotch.jpg" />
+            </div>
+            <div class="slide">
+                <h1>Pistachio</h1>
+                <img src="./Pistachio.jpg" />
+            </div>  
+        </div>
+    </div>
+</div>
+<br>
+<marquee class="think" behavior="alternate" direction="right" scrollamount="10">Eat it before it melts</marquee>
+<br><br>
+<div class="pictures">
+    <div class="sbp">
+        <img src="https://www.thespruceeats.com/thmb/kpuMkqk0BhGMTuSENf_IebbHu1s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/strawberry-ice-cream-10-0b3e120e7d6f4df1be3c57c17699eb2c.jpg" />
+            <div class="fight" >
+                <h3>Strawberry</h3>
+                <p>
+                    <span>Strawberry</span> ice cream is a flavor of ice cream made with strawberry or strawberry flavoring. It is made by blending in strawberry flavoring with the eggs, cream, vanilla, and sugar used to make ice cream
+                </p>
+            </div>
+     </div>
+    <div class="sbp">
+        <img src="https://www.sharmispassions.com/wp-content/uploads/2017/05/ButterscotchIcecream5-475x500.jpg"  />
+            <div class="fight">
+                <h3>Butterscotch</h3>
+                <p>
+                    <span>Butterscotch</span> is a type of confectionery whose primary ingredients are brown sugar and butter. Some recipes include corn syrup, cream, vanilla, and salt. 
+                </p>
+            </div>
+    </div>
+    <div class="sbp">
+        <img src="https://www.southernliving.com/thmb/cmrOvNqtTrJXQ_ChqdHG5qUD2QU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pistachio_ice_cream-s-2000-b7ef39477e4b46d79b761a9e4774b421.jpg" />
+            <div class="fight">
+                <h3>Pistachio</h3>
+                <p>
+                    <span>Pistachio</span> ice cream or pistachio nut ice cream is an ice cream flavor made with pistachio nuts or flavoring. It is often distinctively green in color. Pistachio is also a flavor of sorbet and gelato. 
+                </p>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
